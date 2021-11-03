@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Library services</title>
+	<link rel="icon" href="images/icon.png" sizes="32x32" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>
+	Book Library Services
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li onClick="add_book()">Add Book</li>
+      <li onClick="update_book()">Update Book</li>
+      <li onClick="delete_book()">Delete Book</li>
+      <li onClick="list_books()">List Books</li>
+    </ul>
+	<img src="images/phone.png" alt="Book Library Services" width="250" height="250">
+  </div>
+
+  <div class="col-6 col-s-9" id="main_content">
+	<div id="alert"></div>
+	<div class="modal" id="main_body">  	  
+	  <div id="list_books" class="list_books">
+		<table id="books" class="books">
+			<tr><th>Title</th><th>Author</th><th>Published</th><th>Pages</th></tr>
+		</table>
+	  </div>
+
+	  <div id="display_book_window">
+		<div class="modal-content" id="display_book_form">			
+		  <div class="container">
+			<h3>Isbn <span id="display_isbn" class='display_output'></span></h3>
+			<h3>Title <span id="display_title" class='display_output'></span></h3>	
+			<h3>Subtitle <span id="display_subtitle" class='display_output'></span></h3>
+			<h3>Author <span id="display_author" class='display_output'></span></h3>
+			<h3>Published <span id="display_published" class='display_output'></span></h3>
+			<h3>Publisher <span id="display_publisher" class='display_output'></span></h3>
+			<h3>Pages <span id="display_pages" class='display_output'></span></h3>
+			<h3></b>Description <span id="display_description" class='display_output'></span></h3>
+			<h3>Website <span id="display_website" class='display_output'></span></h3>	
+		  </div>
+		</div>			
+	  </div>	  
+	  
+	  <div id="add_book">
+		  <h2>Add Book</h2>	
+		  <div class="modal-content" id="add_book_form">
+			<div class="container">
+			  <label for="isbn"><b>Isbn</b></label>
+			  <input type="text" placeholder="Enter Isbn" id="isbn" required>
+			  <label for="title"><b>Title</b></label>
+			  <input type="text" placeholder="Enter Title" id="title" required>	
+			  <label for="subtitle"><b>Subtitle</b></label>
+			  <input type="text" placeholder="Enter Subtitle" id="subtitle" required>
+			  <label for="author"><b>Author</b></label>
+			  <input type="text" placeholder="Enter Author" id="author" required>
+			  <label for="published"><b>Published</b></label>
+			  <input type="date" id="published" required>
+			  <label for="publisher"><b>Publisher</b></label>
+			  <input type="text" placeholder="Enter Publisher" id="publisher" required>
+			  <label for="pages"><b>Pages</b></label>
+			  <input type="text" placeholder="Enter Number of Pages" id="pages" required>
+			  <label for="description"><b>Description</b></label>
+			  <textarea rows="6" placeholder="Enter Description" id="description" required></textarea>
+			  <label for="website"><b>Website</b></label>
+			  <input type="text" placeholder="Enter Website" id="website" required>		  
+			  <button onClick="submit_book()">Submit</button>
+			</div>
+		  </div>			
+	  </div>
+	  
+	  <div id="delete_book">
+		  <div id="delete_list_books" class="list_books">					  
+		    Click delete to remove a book..
+			<table id="delete_books" class="books">
+				<tr><th>Title</th><th>Author</th><th>Published</th><th>Pages</th></tr>
+			</table>
+		  </div>	  
+	  </div>
+	  
+	  <div id="update_book">
+		  <div id="update_list_books" class="list_books">		    
+		    Select a book to update..
+			<table id="update_books" class="books">
+				<tr><th>Title</th><th>Author</th><th>Published</th><th>Pages</th></tr>
+			</table>
+		  </div>	  
+	  </div>
+	  
+	  <div id="update_book_window">
+		  <h2>Update Book</h2>
+		  <div class="modal-content" id="update_book_form">		
+			<div class="container">
+			  <label for="isbn_update"><b>Isbn</b></label>
+			  <input type="text" placeholder="Enter Isbn" id="isbn_update" required>
+			  <label for="title_update"><b>Title</b></label>
+			  <input type="text" placeholder="Enter Title" id="title_update" required>	
+			  <label for="subtitle_update"><b>Subtitle</b></label>
+			  <input type="text" placeholder="Enter Subtitle" id="subtitle_update" required>
+			  <label for="author_update"><b>Author</b></label>
+			  <input type="text" placeholder="Enter Author" id="author_update" required>
+			  <label for="published_update"><b>Published</b></label>
+			  <input type="date" id="published_update" required>
+			  <label for="publisher_update"><b>Publisher</b></label>
+			  <input type="text" placeholder="Enter Publisher" id="publisher_update" required>
+			  <label for="pages_update"><b>Pages</b></label>
+			  <input type="text" placeholder="Enter Number of Pages" id="pages_update" required>
+			  <label for="description_update"><b>Description</b></label>
+			  <textarea rows="6" id="description_update" required></textarea>
+			  <label for="website_update"><b>Website</b></label>
+			  <input type="text" placeholder="Enter Website" id="website_update" required>	
+			  <input type="text" id="isbn_original">
+			  <button onClick="update()">Submit</button>
+			</div>
+		  </div>			
+	  </div>
+	  <div id="image_display">
+		<img src="images/reading.png" alt="Book Library Services" width="500" height="500">	  
+	  </div>	  	  
+	</div>
+  </div>
+
+  <div class="col-3 col-s-12">
+	
+	<h2>Weather Updates</h2>
+    <div class="aside">
+		<h1 id="location_name"></h1>
+		<h2 id="temperature"></h2>
+		<h2 id="sunrise"></h2>
+		<h2 id="sunset"></h2>
+		<h2 id="description1"></h2>
+		<h2 id="humidity"></h2>
+		<h2 id="day"></h2>
+		<h2 id="date"></h2>	    
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <center><h3>Copyright &copy; <span id="copyright_year"></span> Book Library Services</h3></center> 
+</div>
+<script src="resources/get_date.js"></script>
+<script src="resources/enable_disable_pages.js"></script>
+<script src="resources/weather.js"></script>
+<script src="resources/variables.js"></script>
+<script src="resources/list_all_books.js"></script>
+<script src="resources/add_book.js"></script>
+<script src="resources/update_book.js"></script>
+<script src="resources/delete_book.js"></script>
+<script type="text/javascript">
+  const year_option = { year: 'numeric' };
+  document.getElementById("copyright_year").innerHTML = today.toLocaleDateString("en-US", year_option)	
+</script>
+</body>
+</html>

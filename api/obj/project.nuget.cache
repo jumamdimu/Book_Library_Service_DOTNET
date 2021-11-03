@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "z5wCuyUe3TG1YZOSj/CPEx/+QyYOATbDjUQJK15Yvs73xFwW2tn9VmkAHXd8rYVcKPMeGAbr4y9ZZhcDeSitAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dell\\Desktop\\Book_Library_Services\\Book_Library_Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.data.sqlite\\3.1.6\\microsoft.data.sqlite.3.1.6.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.6\\microsoft.data.sqlite.core.3.1.6.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.2\\sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
