@@ -14,7 +14,7 @@ list_books = async () => {
 				for ( i = 0; i < number_of_books; i++ ){
 					_books.innerHTML += "<tr onClick='display_window(" + data[i].isbn + ")'><td>" + data[i].title + "</td><td>" + 
 										data[i].author + "</td><td>" + 
-										data[i].published + "</td><td>" + 
+										getDate(data[0].published) + "</td><td>" + 
 										data[i].pages + "</td></tr>";
 				}
 			});		
